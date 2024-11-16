@@ -11,7 +11,7 @@ export const AllPg = () => {
     const fetchHomes = async () => {
       try {
         const response = await axios.post(
-          "https://6738e54f5a707db9a2f0e146--lively-fox-249240.netlify.app/api/v1/users/allhomes"
+          "https://lively-fox-249240.netlify.app//api/v1/users/allhomes"
         );
 
         setHomes(response.data);
