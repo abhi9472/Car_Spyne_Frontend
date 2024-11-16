@@ -94,7 +94,7 @@ export const Navbar = () => {
           <div className="flex-shrink-0">
             <Link to="/allpg">
               <img
-                src={isDarkMode ? "/a.svg.jpg" : "/a.svg.jpg"}
+                src={isDarkMode ? "/adark.png" : "/a.svg.jpg"}
                 alt="PGDekho Logo"
                 className="h-12"
               />
