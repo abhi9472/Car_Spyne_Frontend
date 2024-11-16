@@ -20,7 +20,7 @@ export const Home = () => {
     e.preventDefault();
     try {
       const response = await axios.post(
-        "http://localhost:8000/api/v1/users/suggestion",
+        "https://car-spyne-backend.onrender.com/api/v1/users/suggestion",
         {
           suggestion,
         }

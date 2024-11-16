@@ -11,7 +11,7 @@ export const AllPg = () => {
     const fetchHomes = async () => {
       try {
         const response = await axios.post(
-          "http://localhost:8000/api/v1/users/allhomes"
+          "https://car-spyne-backend.onrender.com/api/v1/users/allhomes"
         );
 
         setHomes(response.data);

@@ -12,7 +12,7 @@ export function Setpassword() {
     console.log(User.data._id);
     try {
       const response = await axios.post(
-        "http://localhost:8000/api/v1/users/newPassword",
+        "https://car-spyne-backend.onrender.com/api/v1/users/newPassword",
         {
           userID: User.data._id,
           password: password,

@@ -26,7 +26,7 @@ export function AddHome() {
       });
 
       const response = await axios.post(
-        `http://localhost:8000/api/v1/users/addhome`,
+        `https://car-spyne-backend.onrender.com/api/v1/users/addhome`,
         formdata,
         {
           headers: {

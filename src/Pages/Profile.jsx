@@ -16,14 +16,14 @@ const AdminProfile = () => {
   const fetchData = async () => {
     try {
       const userResponse = await axios.post(
-        "http://localhost:8000/api/v1/users/userdetail",
+        "https://car-spyne-backend.onrender.com/api/v1/users/userdetail",
         {},
         { withCredentials: true }
       );
       const userProfile = userResponse.data;
 
       const homesResponse = await axios.post(
-        "http://localhost:8000/api/v1/users/getuserhome",
+        "https://car-spyne-backend.onrender.com/api/v1/users/getuserhome",
         {},
         { withCredentials: true }
       );
@@ -48,7 +48,7 @@ const AdminProfile = () => {
       if (!selectedHome?._id || !tags) return;
 
       await axios.patch(
-        `http://localhost:8000/api/v1/users/updatetags`,
+        `https://car-spyne-backend.onrender.com/api/v1/users/updatetags`,
         { newTags: tags },
         {
           params: { id: selectedHome._id },
@@ -68,7 +68,7 @@ const AdminProfile = () => {
       if (!selectedHome?._id || !title) return;
 
       await axios.patch(
-        `http://localhost:8000/api/v1/users/updatetitle`,
+        `https://car-spyne-backend.onrender.com/api/v1/users/updatetitle`,
         { newTitle: title },
         {
           params: { id: selectedHome._id },
@@ -88,7 +88,7 @@ const AdminProfile = () => {
       if (!selectedHome?._id || !description) return;
 
       await axios.patch(
-        `http://localhost:8000/api/v1/users/updatedescription`,
+        `https://car-spyne-backend.onrender.com/api/v1/users/updatedescription`,
         { newDescription: description },
         {
           params: { id: selectedHome._id },
@@ -108,7 +108,7 @@ const AdminProfile = () => {
       if (!selectedHome?._id) return;
 
       await axios.patch(
-        `http://localhost:8000/api/v1/users/deletehome?id=${selectedHome._id}`,
+        `https://car-spyne-backend.onrender.com/api/v1/users/deletehome?id=${selectedHome._id}`,
         null,
         {
           withCredentials: true,

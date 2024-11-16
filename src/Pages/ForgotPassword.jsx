@@ -10,7 +10,7 @@ const ForgotPassword = () => {
     e.preventDefault();
     try {
       const response = await axios.post(
-        "http://localhost:8000/api/v1/users/forgetpassword",
+        "https://car-spyne-backend.onrender.com/api/v1/users/forgetpassword",
         {
           email: email,
         }

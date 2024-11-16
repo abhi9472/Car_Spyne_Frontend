@@ -24,7 +24,7 @@ const SearchBar = () => {
 
     try {
       const response = await axios.post(
-        `http://localhost:8000/api/v1/users/findcars?query=${query}`
+        `https://car-spyne-backend.onrender.com/api/v1/users/findcars?query=${query}`
       );
       setCars(response.data);
       setShowResults(true);
@@ -38,7 +38,7 @@ const SearchBar = () => {
   const fetchCarDetails = async (id) => {
     try {
       const response = await axios.get(
-        `http://localhost:8000/api/v1/users/gethomedetail?_id=${id}`
+        `https://car-spyne-backend.onrender.com/api/v1/users/gethomedetail?_id=${id}`
       );
       console.log("Car Details:", response.data);
       navigate(`/car/${id}`, { state: { car: response.data } });

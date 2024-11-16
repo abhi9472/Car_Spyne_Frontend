@@ -41,7 +41,7 @@ export const Signup = () => {
       form.append("avatar", formData.avatar);
 
       const response = await axios.post(
-        "http://localhost:8000/api/v1/users/register",
+        "https://car-spyne-backend.onrender.com/api/v1/users/register",
         form
       );
 

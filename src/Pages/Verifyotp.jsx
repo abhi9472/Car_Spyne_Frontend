@@ -15,7 +15,7 @@ export function VerifyOtp() {
 
     try {
       const response = await axios.post(
-        "http://localhost:8000/api/v1/users/verifyotp",
+        "https://car-spyne-backend.onrender.com/api/v1/users/verifyotp",
         {
           id: User.data._id,
           OTP: otp,
