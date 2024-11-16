@@ -1,0 +1,16 @@
+/* Global CSS variables for light and dark mode */
+html {
+    --background-color: #ffffff; /* Light mode background */
+    --text-color: #000000; /* Light mode text */
+}
+
+html.dark {
+    --background-color: #000000; /* Dark mode background */
+    --text-color: #ffffff; /* Dark mode text */
+}
+
+/* Ensure full viewport height */
+body {
+    margin: 0; /* Remove default margin */
+    height: 100vh; /* Full viewport height */
+}

@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Ensure html and body use the full height */
+html, body {
+  @apply h-full w-full;
+  margin: 0; /* Remove default margins */
+}
+
+/* Ensure the main div spans full viewport */
+#root {
+  @apply h-full w-full;
+}
